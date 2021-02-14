@@ -1,0 +1,5 @@
+<app-admin-login *ngIf="!authService.login; else elseBlock"></app-admin-login>
+
+<ng-template #elseBlock>
+  <app-admin-home></app-admin-home>
+</ng-template>
